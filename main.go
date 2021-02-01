@@ -28,7 +28,7 @@ func main() {
 	}
 
 	if clear{
-		LogFile.Truncate(0)
+		err = LogFile.Truncate(0)
 		if err != nil {
 			log.Fatal(err)
 		}
